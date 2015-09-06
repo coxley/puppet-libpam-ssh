@@ -1,5 +1,7 @@
 # `libpam_ssh`
 
+[![Build Status](https://travis-ci.org/coxley/puppet-libpam-ssh.png)](https://travis-ci.org/coxley/puppet-libpam-ssh)
+
 #### Table of Contents
 
 1. [Overview](#overview)
