@@ -1,4 +1,5 @@
 fixtures:
-  symlinks:
-    libpam_ssh: "#{source_dir}"
-    stdlib: "#{source_dir}/../../vendor/modules/stdlib"
+  repositories:
+    libpam_ssh: "git://github.com/coxley/puppet-libpam-ssh"
+    stdlib: "git://github.com/puppetlabs/puppetlabs-stdlib"
+    apt: "git://github.com/puppetlabs/puppetlabs-apt"

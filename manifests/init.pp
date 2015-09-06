@@ -42,7 +42,9 @@ class libpam_ssh (
         # Declare apt, install ppa, and install pam-ssh-agent-auth
         include apt
         apt::ppa { 'ppa:cpick/pam-ssh-agent-auth' :} ->
-        exec { 'apt-get update': } ->
+        exec { 'update repos':
+          command => '/usr/bin/apt-get update',
+        } ->
         package { 'pam-ssh-agent-auth': }
 
         file { '/etc/pam.d/sudo':
