@@ -25,14 +25,17 @@ Installs libpam-ssh, manages /etc/pam.d/sudo and adds line to /etc/sudoers.
 
 * `/etc/pam.d/sudo`
 * `/etc/sudoers` (appending a line with stdlib `file_line` resource
+* APT via configuring ppa:cpick/pam-ssh-agent-auth
 
 ## Usage
 
-Class currently takes no arguments, so declaring with include will work fine
+Class only takes one argument `$purge_now` which will, on run, ensure all the
+resources it normally creates are purged/absent.
 
 ## Limitations
 
-Don't have support (no reference installs) for EL platforms.
+Only supports Ubuntu due to using apt::ppa. Pull requests are welcome to add
+support.
 
 ## Development
 
