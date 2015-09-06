@@ -13,5 +13,10 @@
       "version_range": ">= 1.0.0"
     }
   ]
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu"
+    }
+  ]
 }
 
