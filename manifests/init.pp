@@ -29,9 +29,9 @@ class libpam_ssh (
           content => "auth include system-auth\naccount include system-auth\nsession include system-auth"
         }
         file_line { 'ssh_auth_sock':
-          ensure  => absent,
-          path    => '/etc/sudoers',
-          line    => 'Defaults env_keep += SSH_AUTH_SOCK',
+          ensure => absent,
+          path   => '/etc/sudoers',
+          line   => 'Defaults env_keep += SSH_AUTH_SOCK',
         }
         package { 'pam-ssh-agent-auth': ensure => purged }
         apt::ppa { 'ppa:cpick/pam-ssh-agent-auth': ensure => absent }
