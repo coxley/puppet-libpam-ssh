@@ -1,0 +1,17 @@
+{
+  "name": "coxley-libpam_ssh",
+  "version": "0.1.0",
+  "author": "coxley",
+  "summary": "Configure pam_ssh_agent_auth with Puppet",
+  "license": "WTFPL 2.0",
+  "source": "https://github.com/coxley/puppet-libpam-ssh",
+  "project_page": "https://github.com/coxley/puppet-libpam-ssh",
+  "issues_url": "https://github.com/coxley/puppet-libpam-ssh/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
+
